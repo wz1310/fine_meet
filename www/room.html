@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Ruang Rapat - Video Conference</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/room.css" />
+  </head>
+  <body>
+    <header class="conf-header">
+      <div class="header-left">
+        <button class="control-btn small-btn">
+          <span class="material-symbols-outlined">arrow_back</span>
+        </button>
+        <div class="meeting-info">
+          <h1>Weekly Sync</h1>
+          <div class="live-status">
+            <span class="status-dot"></span>
+            <span>Live • ID: 832-921-001</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-right">
+        <div class="timer-badge">
+          <span class="material-symbols-outlined">timer</span>
+          <span>04:23</span>
+        </div>
+        <div class="user-avatar"></div>
+      </div>
+    </header>
+
+    <main class="conf-main">
+      <div class="video-area">
+        <div class="video-grid-container">
+          <div class="video-grid">
+            <!-- <div class="video-card active-speaker">
+              <div
+                class="video-feed"
+                style="
+                  background-image: url('https://ui-avatars.com/api/?name=Budi+Santoso&background=random');
+                "
+              ></div>
+              <div class="video-overlay">
+                <span class="user-name">Budi Santoso</span>
+                <span class="status-text">Speaking...</span>
+              </div>
+            </div>
+            <div class="video-card">
+              <div
+                class="video-feed"
+                style="
+                  background-image: url('https://ui-avatars.com/api/?name=Siti+Aminah&background=random');
+                "
+              ></div>
+              <div class="video-overlay">
+                <span class="user-name">Siti Aminah</span>
+              </div>
+            </div>
+            <div class="video-card">
+              <div
+                class="video-feed"
+                style="
+                  background-image: url('https://ui-avatars.com/api/?name=Joko+Susilo&background=random');
+                "
+              ></div>
+              <div class="video-overlay">
+                <span class="user-name">Joko Susilo</span>
+              </div>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="controls-wrapper">
+          <div class="controls-bar">
+            <button class="control-btn toggle-btn" title="Mute Mic">
+              <span class="material-symbols-outlined">mic</span>
+            </button>
+            <button class="control-btn toggle-btn" title="Turn off Camera">
+              <span class="material-symbols-outlined">videocam</span>
+            </button>
+            <div class="divider"></div>
+            <button class="control-btn" title="Share Screen">
+              <span class="material-symbols-outlined">present_to_all</span>
+            </button>
+            <button class="control-btn primary" title="Open Chat">
+              <span class="material-symbols-outlined">chat</span>
+            </button>
+            <button class="control-btn danger">
+              <span class="material-symbols-outlined">call_end</span>
+              <span class="btn-text">End</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <aside class="chat-sidebar">
+        <div class="chat-tabs">
+          <button class="tab-btn active">Chat (3)</button>
+          <button class="tab-btn">People (6)</button>
+        </div>
+        <div class="chat-messages">
+          <div class="msg-group">
+            <span class="msg-meta">Budi Santoso • 10:45 AM</span>
+            <div class="message-bubble msg-received">
+              Hi everyone, let's start the sync.
+            </div>
+          </div>
+          <div class="msg-group sent">
+            <span class="msg-meta">You • 10:46 AM</span>
+            <div class="message-bubble msg-sent">
+              Yes, visible loud and clear!
+            </div>
+          </div>
+        </div>
+        <div class="chat-input-area">
+          <input type="text" placeholder="Type a message..." />
+        </div>
+      </aside>
+    </main>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-peer/9.11.1/simplepeer.min.js"></script>
+    <script src="js/room.js"></script>
+  </body>
+</html>
