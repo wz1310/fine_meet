@@ -1,5 +1,5 @@
 // Gantilah IP ini dengan IP Address komputer server Anda jika dijalankan di HP asli
-const SERVER_URL = "https://m3h048qq-4000.asse.devtunnels.ms";
+const SERVER_URL = "https://c1jx4415-4000.asse.devtunnels.ms";
 
 // 1. Inisialisasi Koneksi Socket.io
 const socket = io(SERVER_URL);
