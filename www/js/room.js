@@ -205,3 +205,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+// === Chat Toggle (Web & Mobile) ===
+const chatBtn = document.querySelector(".control-btn.primary");
+const chatSidebar = document.querySelector(".chat-sidebar");
+
+if (chatBtn && chatSidebar) {
+  chatBtn.addEventListener("click", () => {
+    chatSidebar.classList.toggle("open");
+    chatBtn.classList.toggle("active");
+  });
+}
